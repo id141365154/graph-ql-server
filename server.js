@@ -42,6 +42,6 @@ app.use("/graphql", bodyParser.json(), graphqlExpress({ schema }));
 app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
 // Start the server
-app.listen(80, () => {
+app.listen(443, () => {
   console.log("Go to http://localhost:4000/graphiql to run queries!");
 });
